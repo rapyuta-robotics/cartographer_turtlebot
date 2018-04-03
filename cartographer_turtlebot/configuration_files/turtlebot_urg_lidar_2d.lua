@@ -55,5 +55,8 @@ TRAJECTORY_BUILDER_2D.ceres_scan_matcher.rotation_weight = 10
 
 POSE_GRAPH.constraint_builder.min_score = 0.65
 POSE_GRAPH.constraint_builder.global_localization_min_score = 0.7
+POSE_GRAPH.optimization_problem.consecutive_node_rotation_weight = 1e3
+POSE_GRAPH.optimization_problem.acceleration_weight = 0
+POSE_GRAPH.matcher_rotation_weight = 1e2
 
 return options
